@@ -1,27 +1,26 @@
-# Game
+# In-Browser Text Adventure Game
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
+![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/zachneill/game/master?label=version)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/zachneill/game/@angular/core?label=angular&color=red)
+![GitHub last commit](https://img.shields.io/github/last-commit/zachneill/game) 
 
-## Development server
+This application is a text-based adventure game. It is the product of an independent study project at Berea College created by Zach Neill and supervised by Dr. Scott Heggen and Dr. Gordon Gray. As a capstone for the Digital Media minor, the project intends to focus on aethetics and story, despite the inherent dearth of visuals within this genre. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Technologies
 
-## Code scaffolding
+This application utilizes [Angular 14](https://angular.io/). Notable implementations are [NgRx](https://ngrx.io/) state management and [SASS](https://sass-lang.com/). [Webstorm](https://www.jetbrains.com/webstorm/) was the preferred IDE for development. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Development
 
-## Build
+Make sure to run `npm install` so you have all the dependencies. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+For the front end, run `ng serve` for a dev server. Navigate to the server at `http://localhost:4200/`. The app auto-reloads if you change any source files. 
 
-## Running unit tests
+For deploying to the [website](https://zachneill.github.io/game), run `ng deploy`. This custom script technically runs `ng deploy --base-href=/game/`, and the angular-gh-pages package takes care of the rest (creating the build folder, pushing to the [gh-pages](https://github.com/zachneill/game/tree/gh-pages) branch, etc.).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Dev Checklist 
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Pre-development stages
+- NgRx implementation
+- Testing
+- Actually creating the game
