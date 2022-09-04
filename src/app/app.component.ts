@@ -6,19 +6,19 @@ import {Component, OnInit} from '@angular/core'
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent implements OnInit {
-  centerText: string = "Oh no, what's happening? I'm sinking. Someone help me from the monster"
-  buttonMessage: string = "Save from Monster"
+  centerText: string = "Test center text"
+  buttonMessage: string = "Test button"
   ngOnInit(){
     setInterval(this.testNonsense, 100)
   }
 
   testNonsense = () => {
-    return this.centerText = this.centerText.slice(1) + " om nom"
+    return this.centerText = this.centerText.slice(1) + " test"
   }
 
   click() {
     clearInterval(1)
-    this.centerText = "YOU CANNOT SAVE ROBERT"
-    this.buttonMessage = "Oh Ok. RIP Mr. Tables."
+    this.centerText = "TEST"
+    this.buttonMessage = "Test."
   }
 }
