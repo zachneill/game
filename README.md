@@ -16,7 +16,7 @@ Make sure to run `npm install` so you have all the dependencies.
 
 For the front end, run `ng serve` for a dev server. Navigate to the server at `http://localhost:4200/`. The app auto-reloads if you change any source files. 
 
-For deploying to the [website](https://zachneill.github.io/game), run `ng deploy`. This custom script technically runs `ng deploy --base-href=/game/`, and the angular-gh-pages package takes care of the rest (creating the build folder, pushing to the [gh-pages](https://github.com/zachneill/game/tree/gh-pages) branch, etc.).
+For deploying to the [website](https://zachneill.github.io/game), run `npm run deploy`. This custom script technically runs `ng deploy --base-href=/game/`, and the angular-gh-pages package takes care of the rest (creating the build folder, pushing to the [gh-pages](https://github.com/zachneill/game/tree/gh-pages) branch, etc.).
 
 ## Dev Checklist 
 
